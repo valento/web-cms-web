@@ -1,0 +1,53 @@
+/* @use './themes.scss'; */
+
+/* reset */
+
+// * {
+//   &,
+//   &:before,
+//   &:after {
+//     outline: 0;
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+//   }
+// }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+hr {
+  width: 100vw;
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(160, 160, 160, 0), rgba(160, 160, 160, .75), rgba(160, 160, 160, 0));
+}
+hr::before {
+  content: '***';
+  display: block;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

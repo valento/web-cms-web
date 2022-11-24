@@ -14,6 +14,10 @@
 
 # production
 /build
+/data
+/journal
+/diagnostic.*
+mongod.conf
 
 # misc
 .DS_Store

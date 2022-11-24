@@ -34,7 +34,7 @@ const nextConfig = {
       '@icons': path.resolve(__dirname, './icons')
     }
     return newConfig
-  },
+  }
 
 /** Global redirects: */
   // redirects: () => ([

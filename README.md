@@ -11,6 +11,10 @@ yarn dev
 yarn build
 yarn start
 ```
+## ERRORS (experimental nextjs.13 features):
+```
+- Permission denined: sudo chown -R $USER <project-dir>
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -39,6 +43,11 @@ Make API available
 - Add Environment - [Read here >](https://cloud.google.com/run/docs/configuring/environment-variables)
 - Caching - [read here](https://cloud.google.com/cdn/docs/caching)
 
-[Cloud CDN >>](https://cloud.google.com/cdn/docs/setting-up-cdn-with-serverless)
+[Cloud CDN >](https://cloud.google.com/cdn/docs/setting-up-cdn-with-serverless)
 
-[Google Developers Codelabs](https://codelabs.developers.google.com/?text=website)
+[Google Developers Codelabs >](https://codelabs.developers.google.com/?text=website)
+<br><br>
+
+---
+# MongoDB
+Configure to access with Authorization: [etc/mongod.conf.origin](https://hevodata.com/learn/mongodb-configuration-file/)

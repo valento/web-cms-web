@@ -12,8 +12,8 @@ yarn build
 yarn start
 ```
 ## ERRORS (experimental nextjs.13 features):
-```
-- Permission denined: sudo chown -R $USER <project-dir>
+```bash
+- If::Permission denined: sudo chown -R $USER <project-dir>
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -51,3 +51,13 @@ Make API available
 ---
 # MongoDB
 Configure to access with Authorization: [etc/mongod.conf.origin](https://hevodata.com/learn/mongodb-configuration-file/)
+- Edit mongod.conf
+- Add Admin-role User into DB
+
+## MongoDb Container:
+```bash
+mkdir ~/path/to/mongo/
+docker run --name mongodb -d -v ~/path/to/data/mongo:/data/db -v ~/path/to/mongod.conf:/etc/mongod.conf.orig mongo
+## Connect with Compass:
+sudo apt --fix-broken install path/to/mogo-compass.deb
+```
